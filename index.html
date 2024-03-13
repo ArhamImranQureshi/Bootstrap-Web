@@ -395,17 +395,43 @@
                     <div class="col-lg-6">
                         <form>
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Eg: Mario@example.com">
+                            <div class=" mb-4 input-group">
+                                <input type="email" class="form-control" id="email" placeholder="Eg: arham@example.com">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </span>
+                            </div>
+                            
                         
                             <label form="name" class="form-label">Name:</label>
-                            <input type="text" class="form-control" id="name" placeholder="E.G: Arham">
+                            <div class="input-group mb-4">
+                                <input type="text" class="form-control" id="name" placeholder="E.G: Arham">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                            </div>
                         
                             <label for="subject" class="form-label" >What is your Question about</label>
-                            <select id="subject" class="form-subject">
-                                <option value="pricing" selceted>Pricing Query</option>
-                                <option value="coontent">Content Query</option>
-                                <option value="other">Other Query</option>
-                            </select>
+                            <div class="input-group mb-4">
+                               
+                                <select id="subject" class="form-select">
+                                    <option value="pricing" selceted>Pricing Query</option>
+                                    <option value="coontent">Content Query</option>
+                                    <option value="other">Other Query</option>
+                                </select>
+                                <span class="input-group-text">
+                                    <i class="bi bi-chat-right-dots-fill"></i>
+                                </span>
+
+                            </div>
+
+                            <div class="form-floating mb-4 mt-5">
+                                <textarea class="form-control" id="query" style="height: 140px;" ></textarea>
+                                <label for="query" class="form-label">Your query...</label>
+                            </div>
+                            <div class="mb-4 text-center">
+                                <button type="submit" class="btn btn-secondary">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
